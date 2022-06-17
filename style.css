@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 5px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('bg-intro-desktop.png');
+    background-color: hsl(0, 100%, 74%);
+}
+
+main {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+}
+
+main .container {
+    display: flex;
+    justify-content: center;
+    flex-basis: 100%;
+    margin-top: 0%;
+    align-items: center;
+}
+
+/* div{
+    border: 2px solid;
+} */
+/* Left part of the registration page */
+main .main-left {
+    margin-right: 3%;
+    justify-content: center;
+}
+
+main .main-left .content1 {
+    width: 100%;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 28px;
+    color: aliceblue;
+    margin-bottom: 0%;
+}
+
+main .main-left .content2 {
+    width: 520px;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: aliceblue;
+    line-height: 25px;
+}
+
+/* Right part of the registration page */
+
+main .main-right {
+    box-sizing: border-box;
+    width: 32%;
+}
+
+main .main-right .trial-btn {
+    margin-bottom: 15px;
+    text-align: center;
+    border: none;
+    background-color: hsl(248, 32%, 49%);
+    background-size: 5px;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+main .main-right .trial-btn span {
+    font-weight: normal;
+    background-color: hsl(248, 32%, 49%);
+    background-size: 5px;
+
+}
+
+main .main-right .trial-btn button {
+    color: aliceblue;
+    border: none;
+    background-color: hsl(248, 32%, 49%);
+    background-size: 5px;
+}
+
+main .main-right .main-form {
+    padding: 15px;
+    background-color: aliceblue;
+    background-size: 5px;
+    border-radius: 5px;
+    box-shadow: 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+main .main-right .main-form .form-details {
+    background-color: aliceblue;
+    background-size: 5px;
+    width: 100%;
+}
+
+main .main-right .main-form .form-details input {
+    background-color: transparent;
+    background-size: 5px;
+    border-radius: 3px;
+    width: 100%;
+    padding: 10px 25px 10px 25px;
+    font-size: 16px;
+    margin: 2px 0px 2px 0px;
+    border: 1px solid #ccc;
+    outline: none;
+    resize: none;
+}
+
+main .main-right .main-form .form-details input:invalid {
+    outline: none;
+    border: 1px solid hsl(0, 100%, 74%);
+    background-image: url(icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: auto;
+    background-origin: content-box;
+    color: hsl(0, 100%, 74%);
+}
+
+main .main-right .main-form .form-details input:invalid+span {
+    display: inline;
+    color: hsl(0, 100%, 74%);
+    float: right;
+    font-size: 10px
+}
+
+main .main-right .main-form .form-details input:valid {
+    /* outline: none; */
+    border: 1px solid hsl(154, 59% 31%);
+}
+
+main .main-right .main-form .form-details span{
+    display: none;
+}
+
+main .main-right .main-form .form-details::placeholder {
+    color: rgb(32, 32, 32);
+}
+
+main .main-right .main-form .form-details img {
+    color: hsl(0, 100%, 74%);
+}
+
+main .main-right .main-form .form-details button {
+    background-color: hsl(154, 59%, 51%);
+    background-size: 5px;
+    width: 100%;
+    padding: 10px 25px 10px 25px;
+    border-radius: 5px;
+    color: aliceblue;
+    font-weight: 500;
+    border: 2px solid hsl(154, 59%, 51%);
+    cursor: pointer;
+
+}
+
+main .main-right .main-form .para {
+    background-color: aliceblue;
+    margin-top: 1%;
+    font-size: 9px;
+    text-align: center;
+    color: #ccc;
+}
+
+main .main-right .main-form a {
+    background-color: aliceblue;
+    background-size: 5px;
+    color: hsl(0, 100%, 74%);
+    font-size: 8px;
+    text-decoration: none;
+}
+
+/* Page Responsivity or Media Query Section */
+
+@media screen and (max-width: 600px) {
+
+
+    main .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+    }
+
+    main .main-left {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        margin: 0%;
+        padding: 0px;
+    }
+
+    main .main-left .content1 {
+        text-align: center;
+        font-size: 18px;
+        max-width: max-content;
+    }
+
+    main .main-left .content2 {
+        text-align: center;
+        font-size: 14px;
+        width: 100%;
+    }
+
+    main .main-right {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 8px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    * {
+        margin: 0;
+        padding: 5px;
+        font-family: 'Poppins', sans-serif;
+        box-sizing: border-box;
+    }
+
+    main {
+        position: relative;
+        min-height: 100vh;
+        width: 100%;
+    }
+
+    main .container {
+        display: flex;
+        justify-content: center;
+        flex-basis: 100%;
+        margin-top: 8%;
+        align-items: center;
+    }
+}
